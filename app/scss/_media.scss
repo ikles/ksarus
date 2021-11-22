@@ -47,3 +47,8 @@
 } 
 
 
+@media (max-width : 640px) {
+  .hide-pda {
+    display: none;
+  }
+}
