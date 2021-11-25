@@ -90,20 +90,20 @@ jQuery(document).ready(function( $ ) {
       
 
 
-     
-             var options = {
-          series: [
-          {
-            name: "",
-            data: [0, 1000, 2500, 2000, 3500, 4000, 4500, 5000, 5500, 6311]
-          },
-          {
-            name: "",
-            data: [0, 1000, 1500, 1700, 2500, 3000, 2500, 1500, 2500, 3386]
-          }
+
+      var options = {
+        series: [
+        {
+          name: "",
+          data: [0, 0, 2500, 2000, 3500, 4000, 4500, 5000, 5500, 6311]
+        },
+        {
+          name: "",
+          data: [0, 0, 1500, 1700, 2500, 3000, 2500, 1500, 2500, 3386]
+        }
         ],
-          chart: {
-          height: 489,
+        chart: {
+          height: 494,
           type: 'line',
           dropShadow: {
             enabled: false,            
@@ -138,10 +138,22 @@ jQuery(document).ready(function( $ ) {
           }
         },
         yaxis: {  
-
           title: {
             text: ''
           }, 
+          labels: {
+            align: 'left',          
+            style: {
+              colors: [],
+              fontSize: '16px',
+              fontFamily: '"Proxima Nova", Arial, sans-serif',
+              fontWeight: 400,
+              textAlign: 'left',
+              cssClass: 'apexcharts-yyy-label',
+            },
+            offsetX: 45,
+          offsetY: -10,
+          },//
           tickAmount: 7,
           min: 0,
           max: 7000
@@ -153,10 +165,10 @@ jQuery(document).ready(function( $ ) {
           offsetY: -25,
           offsetX: -5
         }
-        };
+      };
 
-        var chart = new ApexCharts(document.querySelector(".chart-line-1"), options);
-        chart.render();
+      var chart = new ApexCharts(document.querySelector(".chart-line-1"), options);
+      chart.render();
 
 
 
