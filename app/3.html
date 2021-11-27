@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">  
+	<!--meta name="viewport" content="width=1200px"-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ТехПоддержка</title>  
+	@@include('var/_styless.html')
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+
+<body class="home">
+	<div class="wrapper" id="top">
+		@@include('var/_header.html')
+		<main class="page-content">
+
+
+			@@include('var/_banner.html',{
+				"text":"Техническая <br class='sm-hidden'> поддержка<br>",
+				"subtext":"<strong>вашего сайта</strong>",
+				"desc": "<ul class='banner-list list'><li class='list-item'>Защита от вирусов</li><li class='list-item'>Мониторинг работоспособности</li><li class='list-item'>Резервное копирование</li></ul>",
+				"contentRight": ""
+			})
+
+
+
+			<section class="agvantages-section">
+				<div class="container">
+					<div class="section-inner">
+						<div class="section-header">
+							<div class="section-caption text-center">
+								<h2 class="sc-title white">Мы предлагаем</h2>
+							</div>
+						</div>
+						<div class="section-content">
+							
+							<div class="advantages-grid columns-3 md-columns-2 advantages-grid-teh">
+								<div class="advantage-card">
+									<div class="card-image">
+										<img src="img/content-images/advantages/work-icon.svg" alt="">
+									</div>
+									<div class="card-content">
+										<h3 class="card-caption">Работа над развитием проекта   </h3>
+										<p>Сюда входит улучшение внешнего вида, изменение структуры, добавления новой информации и рекомендации по развитию, направленные на повышение конверсии с сайта.   </p>
+									</div>
+								</div>
+
+								<div class="advantage-card">
+									<div class="card-image">
+										<img src="img/content-images/advantages/tools-icon.svg" alt="">
+									</div>
+									<div class="card-content">
+										<h3 class="card-caption">Обеспечиваем бесперебойную работу вашего бизнеса  </h3>
+										<p>Наши специалисты выявят и устранят ошибки на сайте, проведут тестирование и выявят недочеты, устранят их в короткие сроки. </p>
+									</div>
+								</div>
+
+								<div class="advantage-card">
+									<div class="card-image">
+										<img src="img/content-images/advantages/content-icon.svg" alt="">
+									</div>
+									<div class="card-content">
+										<h3 class="card-caption">Работа с контентом  </h3>
+										<p>Напишем статьи для сайта, разработаем рекламные акции и разместим их на сайте. </p>
+									</div>
+								</div>
+
+							</div><!--grid-->
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+
+
+			<section class="plans-section ad-page">
+				<div class="container">
+					<div class="section-caption text-center no-max-width">
+						<h2 class="sc-title filled">сопровождение сайта</h2>
+						<div class="subtitle-blue">Тарифы</div>
+						<p class="sc-subtitle2">Больше часов меньше стоимость за час </p>
+					</div>
+
+					<div class="plans-block">
+						<div class="block-header">
+							<div class="block-price-type">
+								<p>Цена при оплате</p>
+								<div class="block-select">
+									<select data-toggle="table-prices" data-target="#plans-table">
+										<option value="1">1 месяц</option>
+										<option value="3">3 месяца</option>
+										<option value="6">6 месяцев</option>
+									</select>
+								</div>
+							</div>
+							<div class="see-all-caption lg-visible">Другие тарифы</div>
+						</div>
+						<div class="block-content">
+							<table class="plans-table columns-3">
+								<thead>
+									<tr>
+										<th>
+											
+										</th>
+										<th class="thbottom">
+											<div class="plan-header-block">
+												<div class="block-type">Акция</div>
+												<h4 class="block-name">Просто</h4>
+												
+												<div class="block-price">
+													<p class="new-price">от <strong>2 500 ₽</strong></p>
+												</div>
+											</div>
+										</th>
+										<th class="thbottom">
+											<div class="plan-header-block">												
+												<h4 class="block-name">Удобно</h4>												
+												<div class="block-price">													
+													<p class="new-price"><strong>3 500 ₽</strong></p>
+												</div>
+											</div>
+										</th>
+										<th class="thbottom">
+											<div class="plan-header-block">												
+												<h4 class="block-name">легко</h4>												
+												<div class="block-price">
+													<p class="new-price">от <strong>5 000 ₽</strong></p>
+												</div>
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>									
+									<tr>
+										<td>
+											Стоимость обслуживания мес. 
+										</td>
+										<td>
+											<div class="table-param">2 500 руб.</div>
+										</td>
+										<td>
+											<div class="table-param">3 500 руб.</div>
+										</td>
+										<td>
+											<div class="table-param">5000 руб.</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Включено часов в пакет 
+										</td>
+										<td>
+											<div class="yes-no no">
+												<div class="table-param">3</div>
+											</div>
+										</td>
+										<td>
+											<div class="table-param">2</div>
+										</td>
+										<td>
+											<div class="table-param">5</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Стоимость за час работ 
+										</td>
+										<td>
+											<div class="table-param">1000 руб.</div>
+										</td>
+										<td>
+											<div class="table-param">900 руб.</div>
+										</td>
+										<td>
+											<div class="table-param">700 руб.</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Консультация по вопросам работы сайта 
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Обработка заявки (максимум) 
+										</td>
+										<td>
+											<div class="table-param">3 дня</div>
+										</td>
+										<td>
+											<div class="table-param">2 дня</div>
+										</td>
+										<td>
+											<div class="table-param">1 день</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Поддержка менеджера (пн-пт 10:00 до 18:00) 
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Выезд к заказчику 
+										</td>
+										<td>
+											<div class="yes-no no">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no no">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Добавление на сайт текстовой информации 
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Замена устаревшей информации 											
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Добавление на сайт графической информации 
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Добавление и изменение разделов 											
+										</td>
+										<td>
+											<div class="yes-no no">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Контроль за работоспособностью сайта 
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Резервное копирование сайта 											
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Обновление CMS до актуальной версии 											
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Лечение сайта от вирусов 											
+										</td>
+										<td>
+											<div class="yes-no no">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											При заключении договора на SEO 
+										</td>
+										<td>
+											<div class="table-param">Тариф “Просто” в <br> подарок</div>
+										</td>
+										<td>
+
+										</td>
+										<td>
+
+										</td>
+									</tr>
+
+
+
+
+									<tr class="bottom-row">
+										<th>&nbsp;</th>
+										<td>
+											<button class="btn btn-small btn-filled">Заказать</button>
+										</td>
+										<td>
+											<button class="btn btn-small btn-filled">Заказать</button>
+										</td>
+										<td>
+											<button class="btn btn-small btn-filled">Заказать</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+			<section class="plus-section">
+				<div class="container">
+					<div class="section-caption text-center">
+						<h2 class="sc-title filled">плюсы технической <strong>поддержки</strong></h2>		
+					</div>
+					<p class="p24px"><b>Сотрудничество с нашей компанией</b> – это возможность не нанимать штат постоянных сотрудников, а пользоваться услугами профессиональных верстальщиков, веб-дизайнеров, программистов, администраторов и менеджеров проекта. </p>
+					<p class="p24px"><b>У постоянной технической поддержки следующие достоинства: </b></p>
+					<ul class="plus-list list">
+						<li class="list-item">более низкая стоимость ставки работа за час по сравнению с разовой помощью; 
+						</li>
+						<li class="list-item">быстрое реагирование при устранении неполадок, критически влияющих на работу сайта или блокирующих ее; 
+						</li>
+						<li class="list-item">более высокий приоритет по сравнению с оказанием разовых услуг; 
+						</li>
+						<li class="list-item">возможность постоянно контролировать изменения кода, «откатываться назад» при обнаружении проблем, ведение репозитория сайта. </li>						
+					</ul>
+				</div>
+			</section>
+
+
+
+			<section class="faq-section">
+				<div class="container">
+					<div class="section-caption text-center">
+						<h2 class="sc-title">часто задаваемые <strong>вопросы</strong></h2>
+					</div>
+
+					<div class="accordion">
+						<div class="ac-header">
+							<h3 class="ac-caption2">Можно ли обратиться в вашу компанию за разовыми услугами? </h3>
+							<button class="ac-opener" aria-label="Показать больше"></button>
+						</div>
+						<div class="ac-content ac-content2">
+							<p>Да, если требуется выполнить единичную задачу, мы всегда к услугам клиентов. Следует учитывать такие особенности разового оказания услуг: 
+							</p>
+							<ul class="ac-list list">
+								<li class="list-item">стоимость 1 часа работы – 1 т. рублей;</li>
+								<li class="list-item">более низкий приоритет, по сравнению с решением задач для клиентов, заключивших договор на долговременной основе;</li>
+								<li class="list-item">
+								разовая помощь оказывается с предоплатой, специалисты приступают к работе после поступления денег на счет. </li>
+
+							</ul>
+						</div>
+					</div>
+
+					<div class="accordion">
+						<div class="ac-header">
+							<h3 class="ac-caption2">Зачем нужны тарифные планы? </h3>
+							<button class="ac-opener" aria-label="Показать больше"></button>
+						</div>
+						<div class="ac-content ac-content2">
+							<p>Мы предлагаем тарифные планы для удобства клиентов. Такой подход позволяет снижать ставку за час работы. Например, клиенту требуется решить многочисленные задачи по развитию и продвижению сайта, поэтому ему выгоднее будет оплатить тарифный план. Это позволит снизить стоимость часовой ставки. Если же обращения заказчиков к нам носят разовый характер, сайт не нуждается в доработке и постоянном обслуживании, то мы оказываем помощь на разовой основе по более высокой почасовой оплате. </p>
+						</div>
+					</div>
+
+					<div class="accordion">
+						<div class="ac-header">
+							<h3 class="ac-caption2">Как работает тех. поддержка? </h3>
+							<button class="ac-opener" aria-label="Показать больше"></button>
+						</div>
+						<div class="ac-content ac-content2">
+							<p>Если клиент выбирает тарифный план, то сотрудничество осуществляется по такому алгоритму: </p>
+							<ol>
+								<li><b>1.</b> Заключается контракт по оказанию услуг.</li>
+								<li><b>2.</b> Оплачивается представленный клиенту счет. 
+								</li>
+								<li><b>3.</b> Менеджер распределяет обязанности между конкретными специалистами. 
+								</li>
+								<li><b>4.</b> Проводятся необходимые работы с уведомлением клиента. 
+								</li>
+								<li><b>5.</b> Заказчик может обращаться за помощью на любом этапе сотрудничества. </li>
+							</ol>
+						</div>
+					</div>
+
+					<div class="accordion">
+						<div class="ac-header">
+							<h3 class="ac-caption2">С какими системами управления сайтов (CMS) вы работаете? </h3>
+							<button class="ac-opener" aria-label="Показать больше"></button>
+						</div>
+						<div class="ac-content ac-content2">
+							<p>Если клиент выбирает тарифный план, то сотрудничество осуществляется по такому алгоритму: </p>							
+						</div>
+					</div>
+
+						<div class="accordion">
+						<div class="ac-header">
+							<h3 class="ac-caption2">Я с вами не работал, не могу так просто передать доступы</h3>
+							<button class="ac-opener" aria-label="Показать больше"></button>
+						</div>
+						<div class="ac-content ac-content2">
+							<p>Если клиент выбирает тарифный план, то сотрудничество осуществляется по такому алгоритму: </p>							
+						</div>
+					</div>
+
+
+				</div>
+			</section>
+
+
+			<!------------------------>
+			<!------------------------>
+			<!------------------------>
+			<!------------------------>
+			<!------------------------>
+			<!------------------------>
+			<!------------------------>
+			<!------------------------>
+
+			<section class="write-to-us-section" id="feedback-form">
+				<div class="container">
+					<div class="section-caption">
+						<h2 class="sc-title smaller">      
+							Напишите нам
+						</h2>
+					</div>
+
+					<div class="write-to-us-form form">
+						<form action="">
+							<div class="form-fields">
+								<div class="form-field">
+									<input type="text" class="input-field" placeholder="Имя">
+								</div>
+								<div class="form-field">
+									<input type="email" class="input-field" placeholder="Электронная почта">
+								</div>
+								<div class="form-field">
+									<input type="tel" class="input-field phonemask" placeholder="+7 ( ___ ) ___-__-__">
+								</div>
+								<div class="form-field">
+									<input type="url" class="input-field" placeholder="Сайт">
+								</div>
+								<div class="form-field big-textarea">
+									<textarea placeholder="Вопрос специалистам Ксарус"></textarea>
+
+									<label class="file-input">
+										<input type="file" class="visually-hidden">
+										<div class="fake-label">
+											<div class="label-icon">
+												<svg>
+													<use xlink:href="img/icons-sprite.svg#attach"></use>
+												</svg>
+											</div>
+											<div class="label-text">
+												<div class="default-text">Приложить файл или ТЗ</div>
+												<div class="selected-file"></div>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div class="form-field submit-field">
+									<button class="btn">
+										<span class="btn-text">Отправить заявку</span>
+										<svg class="btn-icon">
+											<use xlink:href="img/icons-sprite.svg#arrow-right"></use>
+										</svg>
+									</button>
+
+									<p class="field-note">Нажимая кнопку, вы разрешаете обработку персональных данных</p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		@@include('var/_footer.html')
+	</div>
+
+	@@include('var/_scripts.html')
+
+</body>
+</html>
+

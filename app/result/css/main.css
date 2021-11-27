@@ -821,7 +821,8 @@ h6 {
           flex-direction: column; }
 
 .conts-row {
-  margin: 0 -14px; }
+  margin: 0 -14px;
+  margin-top: 35px; }
 
 .conts-left-col,
 .conts-right-col {
@@ -832,6 +833,101 @@ h6 {
 
 .conts-right-col {
   width: 50%; }
+
+.conts-p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333333;
+  margin-bottom: 20px; }
+  .conts-p a {
+    color: #039BE5; }
+
+.bread-ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  font-weight: 600;
+  font-size: 14px; }
+  .bread-ul li {
+    margin-right: 8px; }
+  .bread-ul a {
+    color: #039BE5; }
+
+.banner-list .list-item {
+  margin-bottom: 5px; }
+
+.advantages-grid-teh .advantage-card {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.subtitle-blue {
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #039BE5;
+  font-weight: 900;
+  font-size: 24px; }
+
+.sc-subtitle2 {
+  font-size: 16px;
+  margin-top: 8px;
+  color: #333333;
+  line-height: 1.2; }
+
+.plans-table thead th.thbottom {
+  vertical-align: bottom;
+  padding-top: 11px; }
+
+.plus-section {
+  padding: 0  0 40px 0;
+  margin-top: -45px; }
+
+.p24px {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 0; }
+  .p24px:not(:last-child) {
+    margin-bottom: 24px; }
+  .p24px b, .p24px strong {
+    font-weight: 900; }
+
+.plus-list {
+  margin-top: -15px; }
+  .plus-list .list-item {
+    margin-bottom: 15px; }
+
+.faq-section {
+  padding: 40px 0;
+  background: #EEE; }
+
+.ac-caption2 {
+  font-size: 24px;
+  font-weight: 800; }
+
+.accordion {
+  margin-bottom: 0; }
+  .accordion ol {
+    padding-left: 30px;
+    margin-top: 10px; }
+    .accordion ol li {
+      margin-bottom: 10px; }
+  .accordion .ac-content2 {
+    padding: 6px 30px 20px 30px; }
+
+.accordion .ac-content ul.ac-list {
+  display: block;
+  padding-left: 17px; }
+
+.ac-list {
+  margin-top: 15px; }
+  .ac-list .list-item {
+    margin-bottom: 7px; }
+
+.accordion:last-child {
+  border-bottom: 2px solid #333; }
 
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
