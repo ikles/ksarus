@@ -139,7 +139,7 @@
       display: block;
       position: absolute;
       left: 23%;
-      top: 50%;
+      top: 50px; 
       transform: translate(0, -50%);
       width: 65px;
       height: 66px;        
@@ -164,7 +164,9 @@ ul.list {
 li.list-item {
   position: relative;
   padding-left: 16px;
-  margin-bottom: 1.5em;
+  &:not(:last-child) {
+    margin-bottom: 1.5em;
+  }
   &:before {
     content: '';
     display: block;
@@ -230,7 +232,9 @@ ul.progress-list {
   padding: 50px;
 }
 .progress-row {
-  margin-bottom: 50px;
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
 }
 
 .progress-tit {
@@ -244,6 +248,15 @@ ul.progress-list {
     color: #039BE5;
   }
 }
+
+.show-640 {
+  display: none;
+}
+
+.charts-item-rotate {
+  display: none;
+}
+
 .progress-subtit {
   font-weight: bold;
   font-size: 24px;
@@ -356,15 +369,7 @@ ul.progress-list {
   align-items: center; 
   justify-content: center;
   margin-bottom: 0;
-  span {
-    font-weight: bold;
-    font-size: 64px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-  }
+  
 }
 
 .mobile-cahrts-section {
@@ -378,14 +383,26 @@ ul.progress-list {
   justify-content: center;
 }
 
+.mobile-cahrts-col {
+  position: relative;
+  span {
+    font-weight: bold;
+    font-size: 64px;
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 20px);
+    z-index: 20;
+    transform: translate(-50%, -50%);
+  }
+}
 
-.mobile-before {
+.mobile-col-before {
   span {
     color: #FF4E42;  
   }
 }
 
-.mobile-after {
+.mobile-col-after {
   span {
     color: #01CC64;
   }
@@ -819,6 +836,20 @@ h6 {
   align-items: flex-end;
 }
 
+.charts-grow-100 {
+      .charts-gcol {
+        &:nth-child(2n+1) {
+          margin-left: 40px;
+        }
+      }
+    }
+
+.section-content-right {
+  img {
+    max-width: 100%;
+  }
+}
+
 .charts-gcol {
   width: 70px; 
   margin: 0 15px;
@@ -997,6 +1028,21 @@ h6 {
   font-size: 14px;
   li {
   margin-right: 8px;
+  position: relative;
+  display: inline-flex;
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 16px;
+    margin-left: 8px;
+    background: url("../img/bread-arr.svg") $nr center;
+  }    
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
 }
 
 a {

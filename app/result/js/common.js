@@ -31,10 +31,17 @@ jQuery(document).ready(function( $ ) {
     dataLabels: {
       enabled: false},
       responsive: [{
-        breakpoint: 480,
+        breakpoint: 992,
         options: {
           chart: {
-            width: 200
+            width: 363
+          },
+          plotOptions: {
+            pie: {
+              donut: {
+                size: '60%'
+              }
+            }
           }
         }
       }]
@@ -75,11 +82,18 @@ jQuery(document).ready(function( $ ) {
       dataLabels: {
         enabled: false},
         responsive: [{
-          breakpoint: 480,
+          breakpoint: 992,
           options: {
             chart: {
-              width: 200
+              width: 363
+            },
+          plotOptions: {
+            pie: {
+              donut: {
+                size: '60%'
+              }
             }
+          }
           }
         }]
       };
@@ -152,7 +166,7 @@ jQuery(document).ready(function( $ ) {
               cssClass: 'apexcharts-yyy-label',
             },
             offsetX: 45,
-          offsetY: -10,
+            offsetY: -10,
           },//
           tickAmount: 7,
           min: 0,
@@ -426,6 +440,8 @@ $('.charts-grow-7000 .charts-gcol-inn').each(function () {
   $(this).css("height", calc+'px');
 });
 
+
+
 $('.charts-grow-3500 .charts-gcol-inn').each(function () {
   let valu = $(this).find('span').text();
   let calc = (+valu / 3500)*100*4.2;
@@ -438,6 +454,11 @@ $('.charts-grow-700 .charts-gcol-inn').each(function () {
   $(this).css("height", calc+'px');
 });
 
+$('.charts-grow-hor .charts-gcol-inn').each(function () {
+  let valu = $(this).find('span').text();
+  let calc = (+valu / 7000)*100*3.2;
+  $(this).css("width", calc+'px');
+});
 
 }); //ready
 
