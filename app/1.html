@@ -25,6 +25,7 @@
 
 
       @@include('var/_banner.html',{
+        "classes": "section676",
         "text":"ПРОдвижение<br>",
         "subtext":"<strong>Интернет-магазина <br class='sm-hidden'>“decar”</strong>",
         "desc": "<p><img class='company-logo show-640' src='img/content-images/logo_decar.png' alt=''>В Интернет-магазине «Decar» вы можете купить запчасти и аксессуары для автомобиля в Твери. Доставка по России. Выгодные цены. В наличии и на заказ. Декар - автозапчасти и аксессуары для автомобилей. На сайте интернет-магазина «Декар» вы найдёте множество важных и полезных аксессуаров и запчастей для вашего авто.</p>",
@@ -232,7 +233,7 @@
     <div class="mobile-cahrts">
       <div class="mobile-cahrts-col mobile-col-before">
         <span>43</span>
-        <div class="mobile-before mobile-cahrt">          
+        <div class="mobile-before mobile-cahrt" id="mobile-before">          
         </div>
         <div class="mobile-cahrts-link">https://decar-auto.ru</div>
         <div class="spped-row">
@@ -248,7 +249,7 @@
       </div><!--col-->
       <div class="mobile-cahrts-col mobile-col-after">
         <span>95</span>
-        <div class="mobile-after mobile-cahrt">          
+        <div class="mobile-after mobile-cahrt" id="mobile-after">          
         </div>
         <div class="mobile-cahrts-link">https://decar-auto.ru</div>
         <div class="spped-row">
@@ -270,102 +271,114 @@
 
 <div class="tables-section">
   <div class="container">
-    <table class="table-head">
-      <tbody>
-        <tr>
-          <td rowspan="2">
-            <div class="tbl-head">Динамика позиций сайта в ТОП с Февраля по Июнь</div>
-          </td>            
-          <td colspan="2">Яндекс</td>            
-          <td colspan="2">Google</td>            
-        </tr>
-        <tr>            
-          <td>февраль 2018</td>
-          <td>июнь 2019</td>
-          <td>февраль 2018</td>
-          <td>июнь 2019</td>
-        </tr>
-      </tbody>
-    </table>
-    <table class="table-body">
-      <thead>
-        <tr>
-          <td colspan="5"> <div class="tbl-subgead">Ключевые фразы</div> </td>              
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>авточехлы chery</td>
-          <td>1</td>
-          <td>2</td>
-          <td>1</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>брелок сигнализации tomahawk</td>
-          <td>34</td>
-          <td>11</td>
-          <td>34</td>
-          <td>11</td>
-        </tr>
-        <tr>
-          <td>дневные ходовые огни купить</td>
-          <td>13</td>
-          <td>7</td>
-          <td>13</td>
-          <td>7</td>
-        </tr>
-        <tr>
-          <td>купить автосигнализацию шерхан</td>
-          <td>16</td>
-          <td>1</td>
-          <td>16</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>охлаждающая жидкость цена</td>
-          <td>23</td>
-          <td>7</td>
-          <td>23</td>
-          <td>7</td>
-        </tr>
-        <tr>
-          <td>сигнализация томагавк</td>
-          <td>52</td>
-          <td>3</td>
-          <td>52</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>светодиодные лампы для BMW</td>
-          <td>5</td>
-          <td>4</td>
-          <td>5</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>чехлы из экокожи на газ</td>
-          <td>5</td>
-          <td>3</td>
-          <td>5</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>чехлы на сузуки</td>
-          <td>5</td>
-          <td>2</td>
-          <td>5</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>чехлы на чери</td>
-          <td>—</td>
-          <td>4</td>
-          <td>—</td>
-          <td>4</td>
-        </tr>
-      </tbody>
-    </table>
+
+
+
+
+
+    <div class="position-tables-wrap">
+      <div class="position-tables-scroll">
+        <div class="arrrr"></div>
+        <div class="position-tables">
+          <table class="table-head">
+            <tbody>
+              <tr>
+                <td rowspan="2">
+                  <div class="tbl-head">Динамика позиций сайта в ТОП с Февраля по Июнь</div>
+                </td>            
+                <td colspan="2">Яндекс</td>            
+                <td colspan="2">Google</td>            
+              </tr>
+              <tr>            
+                <td>февраль 2018</td>
+                <td>июнь 2019</td>
+                <td>февраль 2018</td>
+                <td>июнь 2019</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table-body">
+            <thead>
+              <tr>
+                <td colspan="5"> <div class="tbl-subgead">Ключевые фразы</div> </td>              
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>авточехлы chery</td>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>брелок сигнализации tomahawk</td>
+                <td>34</td>
+                <td>11</td>
+                <td>34</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>дневные ходовые огни купить</td>
+                <td>13</td>
+                <td>7</td>
+                <td>13</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>купить автосигнализацию шерхан</td>
+                <td>16</td>
+                <td>1</td>
+                <td>16</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>охлаждающая жидкость цена</td>
+                <td>23</td>
+                <td>7</td>
+                <td>23</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>сигнализация томагавк</td>
+                <td>52</td>
+                <td>3</td>
+                <td>52</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>светодиодные лампы для BMW</td>
+                <td>5</td>
+                <td>4</td>
+                <td>5</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>чехлы из экокожи на газ</td>
+                <td>5</td>
+                <td>3</td>
+                <td>5</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>чехлы на сузуки</td>
+                <td>5</td>
+                <td>2</td>
+                <td>5</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>чехлы на чери</td>
+                <td>—</td>
+                <td>4</td>
+                <td>—</td>
+                <td>4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
 </div><!---->
 

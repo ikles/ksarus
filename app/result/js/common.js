@@ -3,6 +3,95 @@ jQuery(document).ready(function( $ ) {
 
 
 
+
+/*  var myChart = new DonutChart(document.getElementById("mobile-before"), {
+    r: 160,
+    stroke: 70,
+    scale: 100,
+    items: [
+    { label: "A", value: .43 },      
+    { label: "C", value: .57 },
+    ]
+  })
+
+
+  var myChart2 = new DonutChart(document.getElementById("mobile-after"), {
+    r: 160,
+    stroke: 70,
+    scale: 100,
+    items: [
+    { label: "A", value: .95 },      
+    { label: "C", value: .05 },
+    ]
+  });
+
+
+  if ($(window).width() < 481) {
+
+    myChart.update({
+      r: 130,
+      stroke: 52
+    }); 
+
+    myChart2.update({
+      r: 130,
+      stroke: 52
+    });    
+  }
+
+
+     if($(window).width() < 361 ) {
+    myChart.update({
+      r: 120,
+      stroke: 52
+    }); 
+
+    myChart2.update({
+      r: 120,
+      stroke: 52
+    });     
+  }
+
+  $(window).resize(function() {
+    if( $(window).width() < 481 ) {
+     myChart.update({
+      r: 130,
+      stroke: 52
+    }); 
+
+     myChart2.update({
+      r: 130,
+      stroke: 52
+    });     
+   }//
+   if($(window).width() < 361 ) {
+    myChart.update({
+      r: 120,
+      stroke: 52
+    }); 
+
+    myChart2.update({
+      r: 120,
+      stroke: 52
+    });     
+  }
+});
+
+  $(window).resize(function() {
+    if( $(window).width() > 480 ) {
+     myChart.update({
+      r: 160,
+      stroke: 70,
+    }); 
+
+     myChart2.update({
+      r: 160,
+      stroke: 70,
+    });     
+   }
+ });*/
+
+
   var options = {
     labels: ["43", ""],
     series: [43, 57],

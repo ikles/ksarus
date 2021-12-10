@@ -369,7 +369,10 @@ ul.progress-list {
   align-items: center; 
   justify-content: center;
   margin-bottom: 0;
-  
+  .chart-donut {
+    width: auto;
+    height: auto;
+  }
 }
 
 .mobile-cahrts-section {
@@ -679,9 +682,12 @@ h6 {
   margin-top: 100px;
 }
 
+.position-tables-wrap {
+  margin-top: 90px;
+}
+
 .table-head {
-  border-collapse: collapse;
-  margin-top: 90px;  
+  border-collapse: collapse;  
   width: 100%;
   tr {
     &:nth-child(2) {
@@ -701,6 +707,7 @@ h6 {
     text-align: center;
     &[rowspan="2"] {
      width: 33.33333%; 
+     flex: none;
      text-align: left;
      padding-right: 85px;
    }
@@ -730,6 +737,7 @@ h6 {
   font-size: 37px;
   line-height: 1.25;
   color: #039BE5;
+  text-align: left;
 }
 
 .table-body {
@@ -756,6 +764,7 @@ h6 {
     width: 16.666666%;    
     &:first-child {
       width: 33.333%;
+      flex: none;
       border-left: none;
       font-weight: normal;
       font-size: 16px;
@@ -837,12 +846,12 @@ h6 {
 }
 
 .charts-grow-100 {
-      .charts-gcol {
-        &:nth-child(2n+1) {
-          margin-left: 40px;
-        }
-      }
+  .charts-gcol {
+    &:nth-child(2n+1) {
+      margin-left: 40px;
     }
+  }
+}
 
 .section-content-right {
   img {
@@ -1006,9 +1015,16 @@ h6 {
 }
 .conts-right-col {
   width: 50%;
+  min-width: 698px;
 }
 
+.apexcharts-tooltip {
+  display: none !important;
+}
 
+.section-braed {  
+          flex-wrap: wrap;
+}
 
 .conts-p {
   font-size: 16px;
@@ -1027,30 +1043,30 @@ h6 {
   font-weight: 600;
   font-size: 14px;
   li {
-  margin-right: 8px;
-  position: relative;
-  display: inline-flex;
-  &:after {
-    content: "";
-    display: inline-block;
-    width: 9px;
-    height: 16px;
-    margin-left: 8px;
-    background: url("../img/bread-arr.svg") $nr center;
-  }    
-  &:last-child {
+    margin-right: 8px;
+    position: relative;
+    display: inline-flex;
     &:after {
-      display: none;
+      content: "";
+      display: inline-block;
+      width: 9px;
+      height: 16px;
+      margin-left: 8px;
+      background: url("../img/bread-arr.svg") $nr center;
+    }    
+    &:last-child {
+      &:after {
+        display: none;
+      }
     }
   }
-}
 
-a {
-  color: #039BE5;
-}
-span {
-  
-}
+  a {
+    color: #039BE5;
+  }
+  span {
+
+  }
 }
 
 
@@ -1070,25 +1086,30 @@ span {
 
 .subtitle-blue {
   text-align: center;
-letter-spacing: 0.02em;
-text-transform: uppercase;
-color: #039BE5;
-font-weight: 900;
-font-size: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #039BE5;
+  font-weight: 900;
+  font-size: 24px;
 }
 
 .sc-subtitle2 {
   font-size: 16px;
-margin-top: 8px;
-color: #333333;
-line-height: 1.2;
+  margin-top: 8px;
+  color: #333333;
+  line-height: 1.2;
 }
 
 .plans-table thead {
-th.thbottom {
-  vertical-align: bottom;
-  padding-top: 11px;  
-}  
+  th.thbottom {
+    vertical-align: bottom;
+    padding-top: 11px;  
+  }  
+  th.thtop {
+    font-size: 24px;
+    font-weight: 800;
+    vertical-align: middle;
+  }
 }
 
 .plus-section {
@@ -1096,13 +1117,25 @@ th.thbottom {
   margin-top: -45px;
 }
 
+.positions-table td:not(:first-child).hovered, .positions-table th:not(:first-child).hovered {  
+  background: none;
+}
+.positions-table tr:hover .hovered {
+  background: none;
+}
+
+
+.positions-table {
+
+}
+
 .p24px {
   font-size: 24px;
   line-height: 1.2;
   margin-bottom: 0;
-&:not(:last-child) {
-  margin-bottom: 24px
-}
+  &:not(:last-child) {
+    margin-bottom: 24px
+  }
   b, strong {
     font-weight: 900;
   }
@@ -1110,9 +1143,9 @@ th.thbottom {
 
 .plus-list {
   margin-top: -15px;
- .list-item {
-  margin-bottom: 15px;
- } 
+  .list-item {
+    margin-bottom: 15px;
+  } 
 }
 
 .faq-section {
@@ -1135,10 +1168,10 @@ th.thbottom {
     }
   }
   .ac-content2 {  
-  padding: 6px 30px 20px 30px;  
+    padding: 6px 30px 20px 30px;  
+  }
 }
-}
- 
+
 
 .accordion .ac-content ul.ac-list {
   display: block;
@@ -1154,6 +1187,40 @@ th.thbottom {
 
 .accordion:last-child {
   border-bottom: 2px solid #333;
+}
+
+.arrrr {
+  display: none;
+}
+
+
+.chart-item-bg { stroke: #fff }
+
+.chart-item-0 { stroke: #FF4E42 }
+
+.chart-item-1 { stroke: #FFEEEC }
+
+#mobile-after {
+.chart-item-0 { stroke: #01CC64 }
+
+.chart-item-1 { stroke: #E7FAF0 }  
+}
+
+
+.bread-ul-banner {
+  margin-bottom: 9px;
+}
+
+.section676 {
+  height: 676px;
+}
+
+.bread-top {
+  width: 100%;
+}
+
+.section-braed {
+  padding-top: 58px;
 }
 
 @import "_media.scss";

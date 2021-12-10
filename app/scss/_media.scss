@@ -22,10 +22,27 @@
       }
     }
   }
+  .conts-right-col {  
+  min-width: unset;
+  }
 }
 
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width : 1199px) {
+  .positions-table thead th:first-child {
+    width: 195px !important;    
+  }
+  .plans-block .block-content .positions-table {
+    --columns-count: 4;
+  }
+  .plans-block2 .block-header .see-all-caption {
+    left: 382px;
+  }
+  .table-head td[rowspan="2"] {
+    padding-right: 10px;
+  }
+}
 @media only screen and (max-width : 991px) {
   .goalss-row {   
    flex-wrap: wrap;
@@ -114,10 +131,56 @@
  margin-top: 80px;
  margin-bottom: 60px;
 }
+.plans-block2 .block-header .see-all-caption {
+    left: 374px;
+    width: 316px;
+  }
+  .table-head td[rowspan="2"] {
+    
+  }
+ 
+
+
+ .position-tables-wrap {
+    position: relative;
+  }
+  .position-tables-scroll {
+  width: 100%;    
+        overflow-x: scroll;
+        
+  }
+.position-tables {
+  width: 1038px;
+}
+.table-body {
+  margin-bottom: 40px;
+}
+
+
+.arrrr {
+  content: '';
+  display: block;
+  width: 345px;
+  height: 14px;
+  background:url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 805 14'%3E%3Cpath d='M1 7h803m0 0l-6-6m6 6l-6 6' stroke='%23333'/%3E%3C/svg%3E") no-repeat right center/cover;    
+  position: absolute;
+  top: -7px;
+  right: 0;
+  z-index: 5;
+}
+
 } 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+   .conts-row {    
+    flex-wrap: wrap;
+  }
+  .conts-left-col,
+  .conts-right-col {
+    width: 100%;
+  } 
+
  .progress-content-gray._left {
   padding-right: 0;
   &:before {
@@ -185,12 +248,12 @@ ul.progress-list {
   flex-wrap: wrap;
 }
 .mobile-cahrts-link {
-  margin-top: -70px;
+  margin-top: -40px;
 }
 .mobile-cahrts-col {
   position: relative;
   span {    
-    top: calc(50% - 0px);
+    top: calc(50% - 17px);
   }
 }  
 .mobile-cahrts {
@@ -305,7 +368,73 @@ ul.progress-list {
     margin-bottom: 13px;
   }
 }
+.positions-table thead th:first-child {
+  width: 113px !important;
+}
+.plans-block2 .block-header .see-all-caption {
+  
+    left: 224px;
+    width: 296px;
+  }
 
+
+
+
+.table-body td {  
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.tbl-head {
+  font-size: 20px;
+  width: 140px;
+  margin-right: 0;
+}
+.table-body td {
+  padding: 15px;
+}
+
+.position-tables {
+  width: 870px;
+}
+.arrrr {  
+  width: 345px;  
+}
+.table-head td {
+  font-size: 20px;
+}
+.table-head td {
+  text-align: left;
+}
+.table-head tr:nth-child(2) td {
+  text-align: center;
+}
+.arrrr {
+  width: 50%;
+}
+
+
+.table-head td[rowspan="2"] {
+  padding-left: 0;
+}
+.table-head td[rowspan="2"],
+.table-body td:first-child,
+.table-body td:not([colspan="2"])
+ {
+  
+}
+
+.table-head td[colspan="2"] {
+  
+}
+
+.position-tables {
+    width: 790px;
+}
 
 }
 
@@ -338,6 +467,9 @@ ul.progress-list {
  .visits-cahrts-block {
    margin-top: 40px;
  }
+ .position-tables {
+   width: calc(150% + 3px);
+ }
 } 
 
 
@@ -346,6 +478,9 @@ ul.progress-list {
 
   .review-card .card-caption {
     font-size: 18px;
+  }
+  .table-head td {
+    padding: 24px 5px;
   }
 }
 
@@ -400,15 +535,37 @@ ul.progress-list {
   }
 
 }
+.mobile-cahrts-col span {
+    top: calc(50% - 20px);
+}
+.progress-it {
+  padding-left: 0;
+  text-align: center;
+}
+
+.progress-content-gray._right p.ptext,
+.progress-items-wrap p.ptext {
+  text-align: center;
+}
+.progress-it .resultss-txt-2 {
+  width: 100%;
+  text-align: center;
+  max-width: 100%;
+}
 }
 
 @media only screen and (max-width : 375px) {
-
+.spped-info {
+  margin-left: 7px;
+}
 }
 
 @media only screen and (max-width : 360px) {
 .charts-grow {
   left: 30px;
+}
+.mobile-cahrts-col span {
+  font-size: 54px;
 }
 }
 
@@ -422,15 +579,7 @@ ul.progress-list {
 } 
 
 
-@media screen and (max-width: 768px) {
-  .conts-row {    
-    flex-wrap: wrap;
-  }
-  .conts-left-col,
-  .conts-right-col {
-    width: 100%;
-  }  
-}
+
 
 @media (max-width : 640px) {
   .hide-pda {
