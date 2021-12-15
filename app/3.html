@@ -99,10 +99,10 @@
 							<div class="block-price-type">
 								<p>Цена при оплате</p>
 								<div class="block-select">
-									<select data-toggle="table-prices" data-target="#plans-table">
+									<select id="plans-table2" data-toggle="table-prices" data-target="plans-table">
 										<option value="1">1 месяц</option>
-										<option value="3">3 месяца</option>
-										<option value="6">6 месяцев</option>
+										<option value="2">2 месяца</option>
+										<option value="3">3 месяцев</option>
 									</select>
 								</div>
 							</div>
@@ -121,7 +121,7 @@
 												<h4 class="block-name">Просто</h4>
 												
 												<div class="block-price">
-													<p class="new-price">от <strong>2 500 ₽</strong></p>
+													<p class="new-price">от <strong><span class="new-price-1">2 500</span> ₽</strong></p>
 												</div>
 											</div>
 										</th>
@@ -129,7 +129,7 @@
 											<div class="plan-header-block">												
 												<h4 class="block-name">Удобно</h4>												
 												<div class="block-price">													
-													<p class="new-price"><strong>3 500 ₽</strong></p>
+													<p class="new-price"><strong><span class="new-price-2">3 500</span> ₽</strong></p>
 												</div>
 											</div>
 										</th>
@@ -137,7 +137,7 @@
 											<div class="plan-header-block">												
 												<h4 class="block-name">легко</h4>												
 												<div class="block-price">
-													<p class="new-price">от <strong>5 000 ₽</strong></p>
+													<p class="new-price">от <strong><span class="new-price-3">5 000</span> ₽</strong></p>
 												</div>
 											</div>
 										</th>
@@ -149,13 +149,13 @@
 											Стоимость обслуживания мес. 
 										</td>
 										<td>
-											<div class="table-param">2 500 руб.</div>
+											<div class="table-param"><span class="new-price-1">2 500</span> руб.</div>
 										</td>
 										<td>
-											<div class="table-param">3 500 руб.</div>
+											<div class="table-param"><span class="new-price-2">3 500</span> руб.</div>
 										</td>
 										<td>
-											<div class="table-param">5000 руб.</div>
+											<div class="table-param"><span class="new-price-3">5 000</span> руб.</div>
 										</td>
 									</tr>
 									<tr>
@@ -613,7 +613,7 @@
 						</div>
 					</div>
 
-						<div class="accordion">
+					<div class="accordion">
 						<div class="ac-header">
 							<h3 class="ac-caption2">Я с вами не работал, не могу так просто передать доступы</h3>
 							<button class="ac-opener" aria-label="Показать больше"></button>

@@ -2,97 +2,144 @@ jQuery(document).ready(function( $ ) {
 
 
 
+  /************************************/
+
+/*$('.wrapper').prepend('<span class="eye-3"></span>');
+let pg = parseInt(document.location.pathname.match(/\d+/))
+$('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
+$('body:not(.active)').css('background-image', "unset");
+
+$('.eye-3').click(function (e) {
+  e.preventDefault();  
+  $('body').toggleClass('active');
+  let pg = parseInt(document.location.pathname.match(/\d+/));
+  $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
+  $('body:not(.active)').css('background-image', "unset");
+
+});*/
+
+/************************************/
 
 
-/*  var myChart = new DonutChart(document.getElementById("mobile-before"), {
-    r: 160,
-    stroke: 70,
-    scale: 100,
-    items: [
-    { label: "A", value: .43 },      
-    { label: "C", value: .57 },
-    ]
-  })
 
+if ($("#plans-table2").length) {
 
-  var myChart2 = new DonutChart(document.getElementById("mobile-after"), {
-    r: 160,
-    stroke: 70,
-    scale: 100,
-    items: [
-    { label: "A", value: .95 },      
-    { label: "C", value: .05 },
-    ]
+  $("#plans-table2").change(function(){
+    console.log($(this).val())
+    if($(this).val() == 1){
+      $('.new-price-1').text('2 500')
+      $('.new-price-2').text('3 500')
+      $('.new-price-3').text('5 000')
+    }
+    else if($(this).val() == 2){       
+      $('.new-price-1').text('2 000')
+      $('.new-price-2').text('3 000')
+      $('.new-price-3').text('4 500')   
+    }
+    else if($(this).val() == 3){
+      $('.new-price-1').text('1 500')
+      $('.new-price-2').text('2 500')
+      $('.new-price-3').text('4 000')      
+    }
   });
+}
 
 
-  if ($(window).width() < 481) {
+anychart.onDocumentReady(function() {
+  // create pie chart with passed data
+  chart = anychart.pie(data0);
 
-    myChart.update({
-      r: 130,
-      stroke: 52
-    }); 
+  // set container id for the chart
+  chart.container('mobile-before');
+  chart.labels().fontSize(16);
+  chart.labels().fontWeight(600);
+  chart.labels().fontFamily("Proxima Nova");
+  // set chart title text settings
+  chart.title('');
 
-    myChart2.update({
-      r: 130,
-      stroke: 52
-    });    
-  }
+  // set chart labels position to outside
+  //chart.labels().position('outside');
+  chart.labels(false);
+  chart.tooltip().enabled(false);
+  // create empty area in pie chart
+  chart.innerRadius('58%');
+  chart.legend(false);
 
-
-     if($(window).width() < 361 ) {
-    myChart.update({
-      r: 120,
-      stroke: 52
-    }); 
-
-    myChart2.update({
-      r: 120,
-      stroke: 52
-    });     
-  }
-
-  $(window).resize(function() {
-    if( $(window).width() < 481 ) {
-     myChart.update({
-      r: 130,
-      stroke: 52
-    }); 
-
-     myChart2.update({
-      r: 130,
-      stroke: 52
-    });     
-   }//
-   if($(window).width() < 361 ) {
-    myChart.update({
-      r: 120,
-      stroke: 52
-    }); 
-
-    myChart2.update({
-      r: 120,
-      stroke: 52
-    });     
-  }
+  // initiate chart drawing
+  chart.draw();
+  //chart.normal().fill("#669999", 0.5);
 });
 
-  $(window).resize(function() {
-    if( $(window).width() > 480 ) {
-     myChart.update({
-      r: 160,
-      stroke: 70,
-    }); 
 
-     myChart2.update({
-      r: 160,
-      stroke: 70,
-    });     
-   }
- });*/
+// create data
+var data0 = [
+{x: "ПК", value: 4300,
+normal:  {
+  fill: "#FF4E42",
+
+},
+},
+{x: "", value: 6700,
+normal:  {
+  fill: "#FFEEEC",
+
+},
+
+},
+];
 
 
-  var options = {
+
+
+
+anychart.onDocumentReady(function() {
+  // create pie chart with passed data
+  chart = anychart.pie(data01);
+
+  // set container id for the chart
+  chart.container('mobile-after');
+  chart.labels().fontSize(16);
+  chart.labels().fontWeight(600);
+  chart.labels().fontFamily("Proxima Nova");
+  // set chart title text settings
+  chart.title('');
+
+  // set chart labels position to outside
+  //chart.labels().position('outside');
+  chart.labels(false);
+  chart.tooltip().enabled(false);
+  // create empty area in pie chart
+  chart.innerRadius('58%');
+  chart.legend(false);
+
+  // initiate chart drawing
+  chart.draw();
+  //chart.normal().fill("#669999", 0.5);
+});
+
+
+// create data
+var data01 = [
+{x: "ПК", value: 500,
+normal:  {
+  fill: "#E7FAF0",
+
+},
+},
+{x: "", value: 9500,
+normal:  {
+  fill: "#01CC64",
+
+},
+
+},
+];
+
+
+
+
+
+/*  var options = {
     labels: ["43", ""],
     series: [43, 57],
     legend: {
@@ -188,8 +235,16 @@ jQuery(document).ready(function( $ ) {
       };
 
       var chart = new ApexCharts(document.querySelector(".mobile-after"), options);
-      chart.render();
-      
+      chart.render();*/
+
+
+      /*****************************/      
+      /*****************************/      
+      /*****************************/      
+      /*****************************/      
+      /*****************************/      
+      /*****************************/      
+      /*****************************/      
       
 
 
@@ -274,6 +329,41 @@ jQuery(document).ready(function( $ ) {
       chart.render();
 
 
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+      /***********************************/
+
+
+
+
+
+
+
+
+
 
 
 
@@ -296,7 +386,7 @@ jQuery(document).ready(function( $ ) {
   // create empty area in pie chart
   chart.innerRadius('55%');
   chart.legend(false);
-
+  
   // initiate chart drawing
   chart.draw();
   //chart.normal().fill("#669999", 0.5);
@@ -548,6 +638,7 @@ $('.charts-grow-hor .charts-gcol-inn').each(function () {
   let calc = (+valu / 7000)*100*3.2;
   $(this).css("width", calc+'px');
 });
+
 
 }); //ready
 

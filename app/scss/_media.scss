@@ -42,6 +42,10 @@
   .table-head td[rowspan="2"] {
     padding-right: 10px;
   }
+  .mobile-cahrts-col {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 @media only screen and (max-width : 991px) {
   .goalss-row {   
@@ -253,7 +257,7 @@ ul.progress-list {
 .mobile-cahrts-col {
   position: relative;
   span {    
-    top: calc(50% - 17px);
+    top: calc(50% - 11px);
   }
 }  
 .mobile-cahrts {
@@ -435,7 +439,10 @@ ul.progress-list {
 .position-tables {
     width: 790px;
 }
-
+.section676 {
+  height: auto;
+  min-height: unset;
+}
 }
 
 @media only screen and (max-width : 640px) {
@@ -552,6 +559,21 @@ ul.progress-list {
   text-align: center;
   max-width: 100%;
 }
+.mobile-cahrts-col span {
+  font-size: 48px;
+  top: calc(50% - 5px);
+}
+.mobile-cahrts {
+  .spped-row {
+    margin-top: 0;
+  }
+}
+.mobile-cahrt {
+  height: 300px;
+}
+.mobile-cahrts-mounth {
+  margin-top: -50px;
+}
 }
 
 @media only screen and (max-width : 375px) {
@@ -570,7 +592,10 @@ ul.progress-list {
 }
 
 @media only screen and (max-width : 320px) {
-
+body, body > * {
+    width: auto;
+    min-width: 320px;
+  }
 }
 
 

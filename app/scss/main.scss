@@ -7,6 +7,8 @@
 }
 
 
+
+
 .lcpadding {
   padding-left: calc((100% - 1180px)/2);    
   @media only screen and (max-width : 1199px) {
@@ -83,7 +85,7 @@
 
 .goalss-col {
   width: 50%;
-  padding: 68px 62px 68px 0;
+  padding: 68px 62px 0px 0;
 }
 
 .goalss-col-l {
@@ -101,7 +103,7 @@
   }  
 }
 .goalss-col-r {
-  padding: 68px 30px;
+  padding: 68px 30px 0 30px;
   position: relative;
   &:before {
     content: "";
@@ -161,6 +163,10 @@ ul.list {
 
 }
 
+.list-1 {
+  margin-top: 20px;
+}
+
 li.list-item {
   position: relative;
   padding-left: 16px;
@@ -170,11 +176,12 @@ li.list-item {
   &:before {
     content: '';
     display: block;
-    width: 8px;
-    height: 8px;
-    background: url('../img/icons/marker.png') no-repeat center center/contain;
+    width: 11px;
+    height: 11px;
+    background: url('../img/icons/marker.png') no-repeat center center/contain;    
+            background-size: 11px;
     position: absolute;
-    top: 5px;
+    top: 3px;
     left: 0;
   }
 }
@@ -184,13 +191,15 @@ li.list-item {
 .resultss {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -20px;
+  margin: 0 -60px;
+  margin-top: 31px; 
 }
 
 .resultss-it {
   margin-bottom: 59px;
+  margin-bottom: 68px;
   width: 50%;
-  padding: 0 20px;
+  padding: 0 60px;
 }
 
 .resultss-txt-1 {
@@ -361,8 +370,8 @@ ul.progress-list {
 
 
 .mobile-cahrt {
-  width: 450px;
-  height: 450px;
+  width: 410px;
+  height: 410px;
   margin: auto;
   position: relative;
   display: flex;     
@@ -380,20 +389,20 @@ ul.progress-list {
 }
 
 .mobile-cahrts {
-  display: flex;
-  margin-top: 57px;
-  
+  display: flex;  
+  margin-top: 20px;
   justify-content: center;
 }
 
 .mobile-cahrts-col {
   position: relative;
+  margin: 0 96px;
   span {
     font-weight: bold;
     font-size: 64px;
     position: absolute;
     left: 50%;
-    top: calc(50% - 20px);
+    top: calc(50% - 13px);
     z-index: 20;
     transform: translate(-50%, -50%);
   }
@@ -655,7 +664,11 @@ h6 {
 .spped-row-devices {
   margin-top: 30px;
   position: relative;
-  z-index: 2;
+  z-index: 2;  
+          justify-content: center;
+          .spped-it {            
+                    justify-content: flex-start;
+          }
 }
 
 .mobile-cahrts-mounth {
@@ -1004,6 +1017,7 @@ h6 {
 .conts-row {
   margin: 0 -14px;
   margin-top: 35px;
+  margin-top: 0;
 }
 
 .conts-left-col,
@@ -1069,18 +1083,44 @@ h6 {
   }
 }
 
+.bread-ul-conts {
+  margin-bottom: 20px;
+}
 
-
-.banner-list {
+.first-screen-section {
+  .banner-list {
   .list-item {
-    margin-bottom: 5px;
+    margin-bottom: 5px !important;
+    &:before {
+      width: 10px;
+      height: 10px;
+          
+              background-size: 10px;
+    }
   }
 }
+}
+
 
 .advantages-grid-teh {
   .advantage-card {
     padding-left: 10px;
     padding-right: 10px;
+    .card-image {
+      width: 86px;
+      height: 91px;
+      margin-bottom: 2px;
+      display: flex;      
+              align-items: flex-start;
+              flex-direction: column;
+      img {
+        width: 100%;
+        max-height: unset;
+      }
+    }
+    .card-caption {
+      font-weight: 700;
+    }
   }
 }
 
@@ -1144,12 +1184,12 @@ h6 {
 .plus-list {
   margin-top: -15px;
   .list-item {
-    margin-bottom: 15px;
+    margin-bottom: 12px !important;
   } 
 }
 
 .faq-section {
-  padding: 40px 0;
+  padding: 50px 0 40px 0;
   background: #EEE;
 }
 
@@ -1172,6 +1212,14 @@ h6 {
   }
 }
 
+.accordion .ac-content ul li {
+  margin-bottom: 10px;
+  &:before {
+  width: 10px;
+height: 10px;
+        background-size: 10px;
+}
+}
 
 .accordion .ac-content ul.ac-list {
   display: block;
@@ -1209,10 +1257,17 @@ h6 {
 
 .bread-ul-banner {
   margin-bottom: 9px;
+  margin-bottom: 22px;
+}
+
+.bread-ul-banner2 {
+  margin-bottom: 10px;
 }
 
 .section676 {
-  height: 676px;
+  height: 676px;  
+          align-items: flex-start;
+          padding-top: 125px;
 }
 
 .bread-top {
@@ -1220,8 +1275,17 @@ h6 {
 }
 
 .section-braed {
-  padding-top: 58px;
+  padding-top: 58px;  
+  padding-top: 122px;
+          align-items: flex-start;
+          min-height: 969px;
+          height: auto;
+          
 }
 
 @import "_media.scss";
 @import "_after-styless";
+
+.eye-3 {
+  z-index: 101;
+}
