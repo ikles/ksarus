@@ -139,55 +139,125 @@ normal:  {
 
 
 
-/*  var options = {
-    labels: ["43", ""],
-    series: [43, 57],
-    legend: {
-      show: false,
-    },    
-    plotOptions: {
-      pie: {
-        donut: {
-          size: '55%'
-        }
+
+
+
+
+
+/*var options = {
+  labels: ["Переходы из поисковых систем", "Переходы по рекламе", "Прямые заходы", "Внутренние переходы", "Переходы по ссылкам", "Остальные"],
+  series: [2300, 500, 300, 250, 50, 250],
+  legend: {
+    show: false,
+  },    
+  plotOptions: {
+    pie: {
+      expandOnClick: true,
+      donut: {
+        size: '55%'
       }
-    },
-    stroke: {
-      show: false,
-      curve: 'smooth',
-      lineCap: 'butt',
-      colors: undefined,
-      width: 0,
-      dashArray: 0,
-    },
-    colors:['#FF4E42', '#FFEEEC'],
-    chart: {
-      type: 'donut',
-    },
-    dataLabels: {
-      enabled: false},
-      responsive: [{
-        breakpoint: 992,
-        options: {
-          chart: {
-            width: 363
-          },
-          plotOptions: {
-            pie: {
-              donut: {
-                size: '60%'
-              }
-            }
+    }
+  },
+  stroke: {
+    show: false,
+    curve: 'smooth',
+    lineCap: 'butt',
+    colors: undefined,
+    width: 0,
+    dashArray: 0,
+  },
+  colors:['#01CC64', '#FFA000', '#FF4E42', '#039BE5', '#BDBDBD', '#E5E5E5'],
+  chart: {
+    type: 'donut',
+  },
+  dataLabels: {
+    enabled: true,
+    style: {
+      fontSize: "16px",
+      fontFamily: '"Proxima Nova", Arial, sans-serif"',
+      fontWeight: "400",
+      textShadow: "none"
+    }    
+  },
+  responsive: [{
+    breakpoint: 769,
+    options: {
+      chart: {
+        width: 360
+      },
+      plotOptions: {
+        pie: {
+          donut: {
+            size: '60%'
           }
         }
-      }]
-    };
-    var chart = new ApexCharts(document.querySelector(".mobile-before"), options);
-    chart.render();
+      }
+    }
+  }]
+};
+var chart = new ApexCharts(document.querySelector("#container3"), options);
+chart.render();*/
 
 
+/*var options2 = {
+  labels: ["Переходы из поисковых систем", "Переходы по рекламе", "Прямые заходы", "Внутренние переходы", "Переходы по ссылкам", "Остальные"],
+  series: [4300, 500, 300, 250, 50, 250],
+  legend: {
+    show: false,
+  },    
+  plotOptions: {
+    pie: {
+      expandOnClick: true,
+      donut: {
+        size: '55%'
+      }
+    }
+  },
+  stroke: {
+    show: false,
+    curve: 'smooth',
+    lineCap: 'butt',
+    colors: undefined,
+    width: 0,
+    dashArray: 0,
+  },
+  colors:['#01CC64', '#FFA000', '#FF4E42', '#039BE5', '#BDBDBD', '#E5E5E5'],
+  chart: {
+    type: 'donut',
+  },
+  dataLabels: {
+    enabled: true,
+    dropShadow: {
+      enabled: true
+    },
+    style: {
+      fontSize: "16px",
+      fontFamily: '"Proxima Nova", Arial, sans-serif"',
+      fontWeight: "500",
+      textShadow: "none",
+      boxShadow: "none"
+    }    
+  },
+  responsive: [{
+    breakpoint: 769,
+    options: {
+      chart: {
+        width: 360
+      },
+      plotOptions: {
+        pie: {
+          donut: {
+            size: '60%'
+          }
+        }
+      }
+    }
+  }]
+};
+var chart = new ApexCharts(document.querySelector("#container4"), options2);
+chart.render();*/
 
-
+/*
 
 
     var options = {
@@ -325,8 +395,18 @@ normal:  {
         }
       };
 
+      if ( elemEnable('.chart-line-1') ) {
       var chart = new ApexCharts(document.querySelector(".chart-line-1"), options);
-      chart.render();
+      chart.render();  
+      }      
+
+      
+
+      function elemEnable(elem) {
+        if (document.querySelector(elem) != null) {
+          return true;
+        }
+      }
 
 
       /***********************************/
@@ -382,6 +462,11 @@ normal:  {
 
   // set chart labels position to outside
   chart.labels().position('outside');
+//  chart.labels().position("inside");
+
+
+// set the offset for the labels
+
 
   // create empty area in pie chart
   chart.innerRadius('55%');
@@ -481,31 +566,31 @@ normal:  {
 //3
 
 anychart.onDocumentReady(function() {
-  // create pie chart with passed data
+
   chart = anychart.pie(data3);
 
-  // set container id for the chart
+  
   chart.container('container3');
   chart.labels().fontSize(16);
   chart.labels().fontWeight(600);
   chart.labels().fontFamily("Proxima Nova");
-  // set chart title text settings
+  
   chart.title('');
 
-  // set chart labels position to outside
+  
   chart.labels().position('outside');
 
-  // create empty area in pie chart
+  
   chart.innerRadius('55%');
   chart.legend(false);
 
-  // initiate chart drawing
+  
   chart.draw();
   //chart.normal().fill("#669999", 0.5);
 });
 
 
-// create data
+
 var data3 = [
 {x: "Переходы из поисковых систем", value: 2300,
 normal:  {
@@ -548,33 +633,34 @@ normal:  {
 //4
 
 anychart.onDocumentReady(function() {
-  // create pie chart with passed data
+
   chart = anychart.pie(data4);
 
-  // set container id for the chart
+  
   chart.container('container4');
   chart.labels().fontSize(16);
   chart.labels().fontWeight(600);
   chart.labels().fontFamily("Proxima Nova");
-  // set chart title text settings
+  
   chart.title('');
 
-  // set chart labels position to outside
-  chart.labels().position('outside');
+  
+  
 
-  // create empty area in pie chart
+  chart.labels().position('outside');
+  
   chart.innerRadius('55%');
   chart.legend(false);
 
-  // initiate chart drawing
+  
   chart.draw();
-  //chart.normal().fill("#669999", 0.5);
+  
 });
 
 
-// create data
+
 var data4 = [
-{x: "Переходы из поисковых систем", value: 2300,
+{x: "Переходы из поисковых систем", value: 4300,
 normal:  {
   fill: "#01CC64",
 
