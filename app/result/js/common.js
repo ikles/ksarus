@@ -45,6 +45,7 @@ if ($("#plans-table2").length) {
 }
 
 
+if (elemEnable('#mobile-before')) {
 anychart.onDocumentReady(function() {
   // create pie chart with passed data
   chart = anychart.pie(data0);
@@ -69,7 +70,7 @@ anychart.onDocumentReady(function() {
   chart.draw();
   //chart.normal().fill("#669999", 0.5);
 });
-
+}
 
 // create data
 var data0 = [
@@ -91,7 +92,7 @@ normal:  {
 
 
 
-
+if (elemEnable('#mobile-after')) {
 anychart.onDocumentReady(function() {
   // create pie chart with passed data
   chart = anychart.pie(data01);
@@ -116,7 +117,7 @@ anychart.onDocumentReady(function() {
   chart.draw();
   //chart.normal().fill("#669999", 0.5);
 });
-
+}
 
 // create data
 var data01 = [
@@ -396,8 +397,8 @@ chart.render();*/
       };
 
       if ( elemEnable('.chart-line-1') ) {
-      var chart = new ApexCharts(document.querySelector(".chart-line-1"), options);
-      chart.render();  
+        var chart = new ApexCharts(document.querySelector(".chart-line-1"), options);
+        chart.render();  
       }      
 
       
@@ -447,7 +448,7 @@ chart.render();*/
 
 
 
-
+if (elemEnable('#container1')) {
       anychart.onDocumentReady(function() {
   // create pie chart with passed data
   chart = anychart.pie(data1);
@@ -459,16 +460,7 @@ chart.render();*/
   chart.labels().fontFamily("Proxima Nova");
   // set chart title text settings
   chart.title('');
-
-  // set chart labels position to outside
   chart.labels().position('outside');
-//  chart.labels().position("inside");
-
-
-// set the offset for the labels
-
-
-  // create empty area in pie chart
   chart.innerRadius('55%');
   chart.legend(false);
   
@@ -476,7 +468,7 @@ chart.render();*/
   chart.draw();
   //chart.normal().fill("#669999", 0.5);
 });
-
+}
 
 // create data
 var data1 = [
@@ -508,7 +500,7 @@ normal:  {
 
 // create a chart and set the data
 
-
+if (elemEnable('#container2')) {
 anychart.onDocumentReady(function() {
   // create pie chart with passed data
   chart = anychart.pie(data2);
@@ -532,6 +524,7 @@ anychart.onDocumentReady(function() {
   chart.draw();
   //chart.normal().fill("#669999", 0.5);
 });
+}
 
 
 // create data
@@ -564,7 +557,7 @@ normal:  {
 
 
 //3
-
+if (elemEnable('#container3')) {
 anychart.onDocumentReady(function() {
 
   chart = anychart.pie(data3);
@@ -588,7 +581,7 @@ anychart.onDocumentReady(function() {
   chart.draw();
   //chart.normal().fill("#669999", 0.5);
 });
-
+}
 
 
 var data3 = [
@@ -632,6 +625,7 @@ normal:  {
 
 //4
 
+if (elemEnable('#container4')) {
 anychart.onDocumentReady(function() {
 
   chart = anychart.pie(data4);
@@ -656,7 +650,7 @@ anychart.onDocumentReady(function() {
   chart.draw();
   
 });
-
+}
 
 
 var data4 = [
