@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Создание сайтов | Ксарус</title>
-  @@include('var/_styless.html')
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	@@include('var/_styless.html')
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -81,14 +81,14 @@
 								</div>
 							</div>
 						</div>
-				
+
 						<a href="#feedback-form" class="btn btn-accent sm-hidden">
 							<span class="btn-text">Заказать звонок</span>
 							<svg class="btn-icon">
 								<use xlink:href="img/icons-sprite.svg#arrow-right"></use>
 							</svg>
 						</a>
-				
+
 						<button class="menu-opener" aria-label="Меню">
 							<span class="bar"></span>
 							<span class="bar"></span>
@@ -276,7 +276,7 @@
 			</nav>
 		</header>
 		<main class="page-content">
-			<section class="first-screen-section">
+			<section class="first-screen-section banner-has-bread">
 				<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 970" class="section-bg" preserveAspectRatio="xMidYMid slice">
 					<g clip-path="url(#clip0)">
 						<path fill="#fff" d="M0 0h1920v970H0z"/>
@@ -410,6 +410,10 @@
 					</defs>
 				</svg>
 				<div class="container">
+					<ul class="bread-ul bread-ul-publ">
+						<li><a href="#">Главная</a></li>	
+						<li><span class="bread-span">Создание сайтов</span></li>
+					</ul>
 					<div class="section-inner">
 						<div class="section-content">
 							<div class="section-caption with-image">
@@ -437,7 +441,7 @@
 				</div>
 			</section>
 
-			<section class="agvantages-section">
+			<section class="agvantages-section agvantages-section--site">
 				<div class="container">
 					<div class="section-inner">
 						<div class="section-header">
@@ -449,7 +453,8 @@
 							<div class="advantages-grid columns-3 md-columns-2">
 								<div class="advantage-card">
 									<div class="card-image">
-										<img src="img/content-images/advantages/design.png" alt="">
+										<img class="hide-575" src="img/content-images/advantages/design.png" alt="">
+										<img class="show-575" src="img/content-images/advantages/design2.png" alt="">
 									</div>
 									<div class="card-content">
 										<h3 class="card-caption">Индивидуальный дизайн </h3>
@@ -459,7 +464,8 @@
 
 								<div class="advantage-card">
 									<div class="card-image">
-										<img src="img/content-images/advantages/stopwatch.svg" alt="">
+										<img class="hide-575" src="img/content-images/advantages/stopwatch.svg" alt="">
+										<img class="show-575" src="img/content-images/advantages/stopwatch2.svg" alt="">
 									</div>
 									<div class="card-content">
 										<h3 class="card-caption">Скорость загрузки </h3>
@@ -469,7 +475,8 @@
 
 								<div class="advantage-card">
 									<div class="card-image">
-										<img src="img/content-images/advantages/monitor-search.svg" alt="">
+										<img class="hide-575" src="img/content-images/advantages/monitor-search.svg" alt="">
+										<img class="show-575" src="img/content-images/advantages/monitor-search2.svg" alt="">
 									</div>
 									<div class="card-content">
 										<h3 class="card-caption">Отвечает требованиям поисковых систем </h3>
@@ -479,7 +486,8 @@
 
 								<div class="advantage-card">
 									<div class="card-image">
-										<img src="img/content-images/advantages/code.png" alt="">
+										<img class="hide-575" src="img/content-images/advantages/code.png" alt="">
+										<img class="show-575" src="img/content-images/advantages/code2.svg" alt="">
 									</div>
 									<div class="card-content">
 										<h3 class="card-caption">Валидность кода </h3>
@@ -489,7 +497,8 @@
 
 								<div class="advantage-card">
 									<div class="card-image">
-										<img src="img/content-images/advantages/devices.svg" alt="">
+										<img class="hide-575" src="img/content-images/advantages/devices.svg" alt="">
+										<img class="show-575" src="img/content-images/advantages/devices2.svg" alt="">
 									</div>
 									<div class="card-content">
 										<h3 class="card-caption">Адаптивная верстка сайта </h3>
@@ -499,7 +508,8 @@
 
 								<div class="advantage-card">
 									<div class="card-image">
-										<img src="img/content-images/advantages/filter.png" alt="">
+										<img class="hide-575" src="img/content-images/advantages/filter.png" alt="">
+										<img class="show-575" src="img/content-images/advantages/filter2.png" alt="">
 									</div>
 									<div class="card-content">
 										<h3 class="card-caption">Высокие показатели конверсии </h3>
@@ -770,7 +780,7 @@
 			<section class="results-section">
 				<div class="container">
 					<div class="section-caption text-center">
-						<h2 class="sc-title smaller filled">как мы <strong>работаем</strong></h2>
+						<h2 class="sc-title filled">как мы <strong>работаем</strong></h2>
 					</div>
 
 					<div class="results-list">
@@ -942,16 +952,6 @@
 		</footer>
 	</div>
 
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script> -->
-
-	<script src="js/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/jcf.js"></script>
-	<script src="js/jcf.select.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-	<script src="js/scripts.js"></script>
-	<!-- <script src="js/animations.js"></script> -->
+@@include('var/_scripts.html')
 </body>
 </html>

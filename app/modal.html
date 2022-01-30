@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Всплывающее окно</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="home">
+
+
+  <div class="modal-overlay modal-overlay_1">        
+    <div class="modal-form__layout"></div>
+    <div class="modal-form__block">     
+      <div class="modal-form__inner">        
+        <span class="success__close modal-close_1"></span>
+        <div class="success">
+          <img src="img/success-check.svg">
+          <div class="success__title">Заявка успешно отправлена</div>
+          <a href="#" class="btn-o">Буду ждать звонка<i></i></a>
+        </div>  
+      </div>
+    </div>
+  </div><!--modal-overlay-->
+
+
+
+
+  @@include('var/_scripts.html')  
+</body>
+</html>

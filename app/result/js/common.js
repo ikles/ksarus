@@ -5,7 +5,9 @@ jQuery(document).ready(function( $ ) {
   /************************************/
 
 /*$('.wrapper').prepend('<span class="eye-3"></span>');
-let pg = parseInt(document.location.pathname.match(/\d+/))
+let pg = 'site';
+console.log(pg)
+console.log(document.location)
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
 
@@ -718,6 +720,32 @@ $('.charts-grow-hor .charts-gcol-inn').each(function () {
   let calc = (+valu / 7000)*100*3.2;
   $(this).css("width", calc+'px');
 });
+
+
+
+
+function popup(openLink, windowEl, closeEl) {  
+  $(openLink).click(function(e) {
+    e.preventDefault();
+    $(windowEl).fadeIn();
+    $('body').addClass('ohi');
+  });
+  $(closeEl).click(function(e) {
+    e.preventDefault();
+    $(windowEl).fadeOut();
+    $('body').removeClass('ohi');
+  });
+  $('.modal-overlay').click(function () {
+    $(this).fadeOut();
+    $('body').removeClass('ohi');
+  });
+  $('.modal-form__block').click(function (e) {
+    e.stopPropagation();  
+  });
+}
+
+
+popup('.cardtop__call', '.modal-overlay_1', '.modal-close_1');
 
 
 }); //ready
