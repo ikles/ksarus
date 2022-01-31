@@ -914,7 +914,8 @@ h6 {
     position: relative;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
-    display: inline-flex; }
+    display: inline-flex;
+    margin-bottom: 4px; }
     .bread-ul li:after {
       content: "";
       display: inline-block;
@@ -1346,7 +1347,9 @@ h6 {
     min-height: 501px;
     padding: 30px 0; }
   .section-caption.with-image .sc-image {
-    margin-left: 5px; } }
+    margin-left: 5px; }
+  .section-caption.with-image .sc-image.ml0 {
+    margin-left: 0; } }
 
 .bread-ul-small {
   margin-bottom: 32px; }
@@ -1397,11 +1400,86 @@ h6 {
 .results-list .item-caption {
   font-weight: 900; }
 
+.section-caption .sc-title.filled strong {
+  -webkit-text-stroke: 0; }
+
+.work-card .card-bg:before {
+  height: 100%; }
+
+.card-name.linear2 {
+  display: inline-block;
+  background-image: linear-gradient(to right, #DA241D, #02448F);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text; }
+
+.card-name.linear {
+  display: inline-block;
+  background-image: linear-gradient(to right, #F79A2F, #EE2C25);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text; }
+
+.block-type {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px;
+  background: #039BE5;
+  color: #fff;
+  font-size: 11px;
+  line-height: 9px;
+  font-weight: bold;
+  min-height: 17px; }
+
+.plans-table thead th.vam {
+  vertical-align: middle; }
+
+.plans-table tbody tr.last-row td {
+  border-bottom: 1px solid #ebebeb; }
+
+.vk-btn-w {
+  margin-top: 24px;
+  display: block;
+  text-align: center; }
+
+div[data-depth] {
+  font-size: 25px; }
+
+.btn-blue {
+  height: 39px;
+  color: #FFF;
+  background: #039BE5;
+  padding: 0 16px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold; }
+
+@media (max-width: 1199px) {
+  .work-card .card-logo {
+    background: none;
+    padding: 0; } }
+
+@media (min-width: 992px) {
+  .work-card.large .card-logo {
+    height: auto; } }
+
 @media (max-width: 991px) {
   .tech-card {
     width: 50%; } }
 
 @media (max-width: 575px) {
+  .how-it-works-list li .item-caption {
+    font-size: 20px; }
+  .our-works-section--page {
+    padding-top: 0; }
   .work-card .card-logo {
     height: auto;
     background: none; }
@@ -1463,9 +1541,7 @@ h6 {
     padding-bottom: 34px;
     padding-top: 110px; }
   .first-screen-section.small {
-    padding-top: 110px; }
-  .section-caption .sc-title strong {
-    -webkit-text-stroke: 0; } }
+    padding-top: 110px; } }
 
 @media (max-width: 480px) {
   .tech-card {

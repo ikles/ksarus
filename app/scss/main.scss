@@ -1066,6 +1066,7 @@ h6 {
     margin-right: 8px;
     position: relative;
     display: inline-flex;
+    margin-bottom: 4px;
     &:after {
       content: "";
       display: inline-block;
@@ -1619,6 +1620,9 @@ h6 {
   .section-caption.with-image .sc-image {
     margin-left: 5px;
   }
+  .section-caption.with-image .sc-image.ml0 {
+    margin-left: 0;
+  }
 }
 
 .bread-ul-small {
@@ -1687,6 +1691,96 @@ h6 {
   }
 }
 
+  .section-caption .sc-title.filled strong {
+    -webkit-text-stroke: 0;
+  }
+
+  .work-card .card-bg:before {
+    height: 100%;
+  }
+
+.card-name.linear2 {
+    display: inline-block;
+  background-image: -webkit-linear-gradient(left, #DA241D, #02448F);
+    background-image:    -moz-linear-gradient(left, #DA241D, #02448F);
+    background-image:     -ms-linear-gradient(left, #DA241D, #02448F);
+    background-image:      -o-linear-gradient(left, #DA241D, #02448F);
+    background-image:         linear-gradient(to right, #DA241D, #02448F);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.card-name.linear {
+  display: inline-block;
+  background-image: -webkit-linear-gradient(left, #F79A2F, #EE2C25);
+    background-image:    -moz-linear-gradient(left, #F79A2F, #EE2C25);
+    background-image:     -ms-linear-gradient(left, #F79A2F, #EE2C25);
+    background-image:      -o-linear-gradient(left, #F79A2F, #EE2C25);
+    background-image:         linear-gradient(to right, #F79A2F, #EE2C25);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+.block-type {
+  display: inline-flex;
+    padding: 4px;
+    background: #039BE5;
+    color: #fff;
+    font-size: 11px;
+    line-height: 9px;
+    font-weight: bold;    
+    min-height: 17px;
+}
+
+.plans-table thead th.vam {
+  vertical-align: middle;
+}
+
+.plans-table tbody {
+tr.last-row {
+ td {
+   border-bottom: 1px solid #ebebeb;
+ } 
+}  
+}
+
+.vk-btn-w {
+  margin-top: 24px;
+  display: block;
+  text-align: center;
+}
+
+div[data-depth] {
+  font-size: 25px;
+}
+
+.btn-blue {
+  height: 39px;
+  color: #FFF;
+  background: #039BE5;
+  padding: 0 16px;
+  display: inline-flex;
+justify-content: center;
+          align-items: center;
+          font-weight: bold;
+}
+.min {}
+
+
+@media (max-width : 1199px) {
+  .work-card .card-logo {
+    background: none;
+    padding: 0;
+  }
+
+}
+@media (min-width : 992px) {
+  .work-card.large .card-logo {
+    height: auto;
+  }
+}
 @media (max-width : 991px) {
   .tech-card {
    width: 50%; 
@@ -1694,6 +1788,12 @@ h6 {
 }
 
 @media (max-width : 575px) {
+  .how-it-works-list li .item-caption {
+    font-size: 20px;
+  }
+  .our-works-section--page {
+    padding-top: 0;
+  }
   .work-card .card-logo {
     height: auto;
     background: none;
@@ -1784,9 +1884,7 @@ h6 {
   .first-screen-section.small {
     padding-top: 110px;
   }
-  .section-caption .sc-title strong {
-    -webkit-text-stroke: 0;
-  }
+
 }
 
 @media (max-width : 480px) {

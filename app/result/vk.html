@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>ВКонтакте | Ксарус</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="css/jcf.css">
   <link rel="stylesheet" href="css/main-old.css">
   <link rel="stylesheet" href="css/main.css">
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -89,14 +89,14 @@
 								</div>
 							</div>
 						</div>
-				
+
 						<a href="#feedback-form" class="btn btn-accent sm-hidden">
 							<span class="btn-text">Заказать звонок</span>
 							<svg class="btn-icon">
 								<use xlink:href="img/icons-sprite.svg#arrow-right"></use>
 							</svg>
 						</a>
-				
+
 						<button class="menu-opener" aria-label="Меню">
 							<span class="bar"></span>
 							<span class="bar"></span>
@@ -284,7 +284,7 @@
 			</nav>
 		</header>
 		<main class="page-content">
-			<section class="first-screen-section">
+			<section class="first-screen-section banner-has-bread">
 				<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 970" class="section-bg" preserveAspectRatio="xMidYMid slice">
 					<g clip-path="url(#clip0)">
 						<path fill="#fff" d="M0 0h1920v970H0z"/>
@@ -418,13 +418,20 @@
 					</defs>
 				</svg>
 				<div class="container">
+					<ul class="bread-ul bread-ul-publ">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Реклама</a></li>
+						<li><a href="#">Контекстная реклама</a></li>
+						<li><span class="bread-span">ВКонтакте</span></li>
+					</ul>
 					<div class="section-inner">
 						<div class="section-content">
 							<div class="section-caption with-image">
 								<h1 class="sc-title">Привлекайте больше клиентов из социальной сети <strong>ВКонтакте</strong></h1>
 
 								<div class="sc-image md-visible">
-									<img src="img/content-images/vk-image.png" alt="">
+									<img class="hide-575" src="img/content-images/vk-image.png" alt="">
+									<img class="show-575" src="img/content-images/vk-image2.png" alt="">
 								</div>
 							</div>
 
@@ -457,7 +464,8 @@
 							<div class="advantages-grid">
 								<div class="advantage-card">
 									<div class="card-image">
-										<img src="img/content-images/advantages/coin.svg" alt="">
+										<img class="hide-575" src="img/content-images/advantages/coin.svg" alt="">
+										<img class="show-575" src="img/content-images/advantages/coin2.svg" alt="">
 									</div>
 									<div class="card-content">
 										<p>Более низкая цена клика чем в Яндекс Директ или Google Реклама</p>
@@ -466,7 +474,8 @@
 
 								<div class="advantage-card">
 									<div class="card-image">
-										<img src="img/content-images/advantages/wallet.svg" alt="">
+										<img class="hide-575" src="img/content-images/advantages/wallet.svg" alt="">
+										<img class="show-575" src="img/content-images/advantages/wallet2.svg" alt="">
 									</div>
 									<div class="card-content">
 										<p>Доступ к платежеспособной аудитории в основном старше 30 лет</p>
@@ -475,7 +484,8 @@
 
 								<div class="advantage-card">
 									<div class="card-image">
-										<img src="img/content-images/advantages/stopwatch.svg" alt="">
+										<img class="hide-575" src="img/content-images/advantages/peoples.svg" alt="">
+										<img class="show-575" src="img/content-images/advantages/peoples2.svg" alt="">
 									</div>
 									<div class="card-content">
 										<p>Рекламное объявление увидит большое количество людей вашей целевой аудитории</p>
@@ -484,7 +494,8 @@
 
 								<div class="advantage-card">
 									<div class="card-image">
-										<img src="img/content-images/advantages/user-auth.svg" alt="">
+										<img class="hide-575" src="img/content-images/advantages/volume.svg" alt="">
+										<img class="show-575" src="img/content-images/advantages/volume2.svg" alt="">
 									</div>
 									<div class="card-content">
 										<p>Реклама товаров и услуг даже без наличия сайта</p>
@@ -549,677 +560,245 @@
 							<table class="plans-table columns-3">
 								<thead>
 									<tr>
-										<th>
+										<th class="vam">
 											<h3 class="table-name no-max-width">Стоимость размещение рекламы ВКонтакте </h3>
 										</th>
-										<th>
+										<th class="vam">
 											<div class="plan-header-block">
 												<div class="block-type">Хит</div>
 												<h4 class="block-name">Старт</h4>
 												<div class="block-text">
-													<p>При небольшом бюджете вы достигаете максимально возможного результата</p>
+													<p>Настройка, ведение рекламной кампании для малого бизнеса</p>
 												</div>
-												<div class="block-price">
+												<!-- <div class="block-price">
 													<p class="new-price">от <strong>12 000 ₽</strong></p>
-												</div>
+												</div> -->
 											</div>
 										</th>
-										<th>
+										<th class="vam">
 											<div class="plan-header-block">
 												<div class="block-type">Скидка</div>
 												<h4 class="block-name">Эксперт</h4>
 												<div class="block-text">
 													<p>Мощное средство что бы поднять продажи и доходы компании</p>
 												</div>
-												<div class="block-price">
+												<!-- <div class="block-price">
 													<p class="old-price"><del>от <strong>20 000 ₽</strong></del></p>
 													<p class="new-price">от <strong>12 000 ₽</strong></p>
-												</div>
+												</div> -->
 											</div>
 										</th>
-										<th>
+										<th class="vam">
 											<div class="plan-header-block">
 												<div class="block-type"></div>
 												<h4 class="block-name">Комплекс</h4>
 												<div class="block-text">
 													<p>Комплексное продвижение с использованием всех инструментов</p>
 												</div>
-												<div class="block-price">
+												<!-- <div class="block-price">
 													<p class="new-price">от <strong>30 000 ₽</strong></p>
-												</div>
+												</div> -->
 											</div>
 										</th>
 									</tr>
 								</thead>
-								<tbody>
-									<tr>
-										<th>WEB — Аналитика</th>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-									</tr>
+								<tbody>									
 									<tr>
 										<td>
-											Сервисы аналитики
-											<div class="info-block">
-												<button class="block-opener" aria-label="Подробнее о 'Сервисы аналитики'">
-													<svg class="btn-icon">
-														<use xlink:href="img/icons-sprite.svg#info"></use>
-													</svg>
-												</button>
-												<div class="block-content">
-													<p><strong>Сервисы аналитики</strong> — dolor sit amet, consectetur adipisicing elit. Inventore excepturi commodi eaque accusantium sapiente ipsa veniam consectetur aut dolorum, nam?</p>
-												</div>
-											</div>
+											<strong>Настройка за проект</strong>											
+										</td>
+										<td>
+											<div class="table-param">3 180 руб.</div>
 										</td>
 										<td>
 											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
+												<div class="table-param">7 420 руб.</div>
 											</div>
 										</td>
 										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
+											<div class="table-param">14 840 руб.</div>
 										</td>
 									</tr>
 									<tr>
 										<td>
-											Составление и настройка целей
+											<strong>Ведение за проект</strong>
 										</td>
 										<td>
-											<div class="yes-no no">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
+											<div class="table-param">2 120 руб.</div>
 										</td>
 										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
+											<div class="table-param">3 710 руб.</div>
 										</td>
 										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
+											<div class="table-param">7 420 руб. </div>
+											<div class="block-type">1 мес. в подарок</div>
 										</td>
 									</tr>
 									<tr>
 										<td>
-											Анализ показателей статистики
+											Количество объявлений 
 										</td>
 										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
+											<div class="table-param">До 5 объявлений</div>
 										</td>
 										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
+											<div class="table-param">До 30 объявлений</div>
 										</td>
 										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
+											<div class="table-param">До 100 объявлений</div>
 										</td>
 									</tr>
 									<tr>
 										<td>
-											Анализ поведения пользователей на сайте
+											Время реализации 
 										</td>
 										<td>
-											<div class="yes-no no">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
+											<div class="table-param">1-2 дня</div>
 										</td>
 										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
+											<div class="table-param">2-5 дней</div>
 										</td>
 										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th>SEO оптимизация</th>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td>
-											Технический аудит сайта
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Аудит Юзабилити
-										</td>
-										<td>
-											<div class="yes-no no">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Количество запросов
-										</td>
-										<td>
-											<div class="table-param">до 100</div>
-										</td>
-										<td>
-											<div class="table-param">до 300</div>
-										</td>
-										<td>
-											<div class="table-param">до 1000</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Формирование структуры сайта
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Внутренняя оптимизация 
-											<div class="info-block">
-												<button class="block-opener" aria-label="Подробнее о 'Внутренняя оптимизация'">
-													<svg class="btn-icon">
-														<use xlink:href="img/icons-sprite.svg#info"></use>
-													</svg>
-												</button>
-												<div class="block-content">
-													<p><strong>Внутренняя оптимизация</strong> — dolor sit amet, consectetur adipisicing elit. Inventore excepturi commodi eaque accusantium sapiente ipsa veniam consectetur aut dolorum, nam?</p>
-												</div>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Написание текстов для сайта
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Внешняя оптимизация  
-											<div class="info-block">
-												<button class="block-opener" aria-label="Подробнее о 'Внешняя оптимизация'">
-													<svg class="btn-icon">
-														<use xlink:href="img/icons-sprite.svg#info"></use>
-													</svg>
-												</button>
-												<div class="block-content">
-													<p><strong>Внешняя оптимизация</strong> — dolor sit amet, consectetur adipisicing elit. Inventore excepturi commodi eaque accusantium sapiente ipsa veniam consectetur aut dolorum, nam?</p>
-												</div>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Мобильная оптимизация
-										</td>
-										<td>
-											<div class="yes-no no">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Генератор метатегов 
-											<div class="info-block">
-												<button class="block-opener" aria-label="Подробнее о 'Генератор метатегов'">
-													<svg class="btn-icon">
-														<use xlink:href="img/icons-sprite.svg#info"></use>
-													</svg>
-												</button>
-												<div class="block-content">
-													<p><strong>Генератор метатегов</strong> — dolor sit amet, consectetur adipisicing elit. Inventore excepturi commodi eaque accusantium sapiente ipsa veniam consectetur aut dolorum, nam?</p>
-												</div>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no no">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no no">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											SEO фильтр 
-											<div class="info-block">
-												<button class="block-opener" aria-label="Подробнее о 'SEO фильтр'">
-													<svg class="btn-icon">
-														<use xlink:href="img/icons-sprite.svg#info"></use>
-													</svg>
-												</button>
-												<div class="block-content">
-													<p><strong>SEO фильтр</strong> — dolor sit amet, consectetur adipisicing elit. Inventore excepturi commodi eaque accusantium sapiente ipsa veniam consectetur aut dolorum, nam?</p>
-												</div>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no no">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no no">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Контент проект
-											<div class="info-block">
-												<button class="block-opener" aria-label="Подробнее о 'Контент проект'">
-													<svg class="btn-icon">
-														<use xlink:href="img/icons-sprite.svg#info"></use>
-													</svg>
-												</button>
-												<div class="block-content">
-													<p><strong>Контент проект</strong> — dolor sit amet, consectetur adipisicing elit. Inventore excepturi commodi eaque accusantium sapiente ipsa veniam consectetur aut dolorum, nam?</p>
-												</div>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no no">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no no">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th>Интернет маркетинг и консалтинг</th>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td>
-											Сравнение с конкурентами
-										</td>
-										<td>
-											<div class="yes-no no">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Увеличение конверсии
-										</td>
-										<td>
-											<div class="yes-no no">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Улучшение поведенческих факторов
-										</td>
-										<td>
-											<div class="yes-no no">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Разработка прототипов страниц
-										</td>
-										<td>
-											<div class="yes-no no">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Сервисы и чаты обратного звонка
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											Постановка и достижение заданных KPI
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
-										</td>
-										<td>
-											<div class="yes-no yes">
-												<svg class="yes-no-icon">
-													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
-												</svg>
-											</div>
+											<div class="table-param">5-10 дней</div>
 										</td>
 									</tr>
 
-
-									<tr class="bottom-row">
-										<th>&nbsp;</th>
+									<tr>
 										<td>
-											<button class="btn btn-small btn-filled">Заказать</button>
+											Корректировка аудитории
 										</td>
 										<td>
-											<button class="btn btn-small btn-filled">Заказать</button>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
 										</td>
 										<td>
-											<button class="btn btn-small btn-filled">Заказать</button>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
 										</td>
 									</tr>
+									<tr>
+										<td>
+											Составление отчета
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Анализ статистики 
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Корректировка ставок
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+									</tr>
+									<tr class="last-row">
+										<td>
+											Изменение не эффективных объявлений
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+										<td>
+											<div class="yes-no yes">
+												<svg class="yes-no-icon">
+													<use xlink:href="img/icons-sprite.svg#tick" class="yes"></use>
+												</svg>
+											</div>
+										</td>
+									</tr>	
+														
 								</tbody>
 							</table>
+							<div class="vk-btn-w">
+								<a href="" class="btn-blue min">Заказать</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1240,7 +819,7 @@
 					</div>
 
 					<div class="client-results-slider">
-	  <div class="slide">
+						  <div class="slide">
                             <div class="client-results-card ">
                 <div class="card-left">
                   <h3 class='card-caption'><a href='#'>Интернет-магазин <br> «Декар»</a></h3><p>Увеличили количество прямых заходов и переходов на сайт из поисковых систем.</p>
@@ -1465,7 +1044,7 @@
               </ul>
             </div>
             </div>
-</div><!--slider-->
+					</div><!--slider-->
 
 					<div class="section-header mobile md-visible">
 						<div class="slider-nav">
@@ -1649,7 +1228,7 @@
         </div>
       </section>
 
-		      <section class="events-section events-slider-scope default-slider-wrapper">
+			      <section class="events-section events-slider-scope default-slider-wrapper">
         <div class="container">
           <div class="events__inner">
             <div class="section-header">
